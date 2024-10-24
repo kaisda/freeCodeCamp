@@ -1,0 +1,65 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+    margin: 30px 10px;
+}
+
+#title {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 30px;
+
+}
+
+#subtitle {
+    font-family: sans-serif;
+    margin-top: 0;
+}
+
+#img-div {
+    background-color: white;
+}
+
+#image {
+    width: 80%;
+    align: center;
+}
+
+#tritute-info {
+    padding-top: 50px;
+    font-family: sans-serif;
+}
+
+ul li {
+    position: block;
+    font-family: sans-serif;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 30px;
+    line-height: 2em;
+}
+
+#quote {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+    position: block;
+}
+
+#tribute-link {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a {
+    color: rgb(137, 108, 147);
+}

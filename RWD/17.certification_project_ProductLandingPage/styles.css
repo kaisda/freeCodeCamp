@@ -1,0 +1,223 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(240, 244, 243);
+    padding-top: 100px;
+
+}
+
+#header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgb(240, 244, 243);
+    /* border: 1px solid black; */
+    padding: 10px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+    width: 60vw;
+    min-width: 300px;
+    /* border: 1px dashed red; */
+}
+
+#header-img {
+    width: 300px;
+    min-width: 300px;
+    height: auto;
+    /* border: 1px solid green; */
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    width: 40vw;
+    /* border: 1px solid blue; */
+    margin-top: 2rem;
+}
+
+.nav-link {
+    /* border: 1px solid orange; */
+    color: black;
+    text-decoration: none;
+}
+
+#title {
+    text-align: center;
+    /* border: 1px solid black; */
+    padding-top: 150px;
+    margin-bottom: 80px;
+    z-index: 100;
+
+
+
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+
+#email,
+#submit {
+    /* border: 1px solid red; */
+    border-radius: 5%;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+#submit {
+    width: 120px;
+    margin: 10px auto;
+    background-color: orange;
+    font-weight: bolder;
+}
+
+.container {
+    /* border: 1px solid black; */
+    width: 80vw;
+    margin: auto;
+
+}
+
+/* .features {
+    border: 1px solid red;
+} */
+
+.intro {
+    /* border: 1px solid green; */
+    display: flex;
+    padding: 20px;
+
+
+}
+
+.icon {
+    border: 1px solid blue;
+    width: 120px;
+    height: 120px;
+    margin-left: 10vw;
+    margin-right: 2vw;
+}
+
+.content {
+    /* border: 1px solid pink; */
+    width: 55vw
+}
+
+.content h2,
+.content p {
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    margin-bottom: 1px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+#how-it-works {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    width: 480px;
+    height: 250px;
+}
+
+#pricing {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.item {
+    border: 1px solid black;
+    text-align: center;
+    padding: 0;
+    margin: 10px;
+    width: 300px;
+}
+
+.item h2 {
+    border-bottom: 1px solid black;
+    padding: 10px 50px;
+    margin-top: 0;
+    margin-left: 0;
+    background-color: rgb(211, 211, 171);
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.item strong {
+    /* border: 1px solid black; */
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.price-select {
+    /* border: 1px solid black; */
+    background-color: orange;
+    border-radius: 5%;
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+footer {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 20px 80px;
+    background-color: rgb(211, 211, 171);
+    height: 80px;
+}
+
+footer ul {
+    /*  border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 200px;
+    margin-top: 10px;
+    margin: 0;
+}
+
+footer p {
+    padding: 5px;
+    margin: 0;
+}
+
+@media only screen and (max-width:600px) {
+    #how-it-works {
+        width: 90vw;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    #princing {
+        flex-direction: column;
+        align-items: center;
+    }
+}
