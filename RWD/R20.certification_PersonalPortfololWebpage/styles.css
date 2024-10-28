@@ -1,0 +1,304 @@
+/* 變數設定 */
+
+:root {
+    --header: rgb(196, 57, 76);
+    --background: rgb(52, 52, 56);
+}
+
+/* 基本設定 */
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* border: 2px solid red; */
+    margin: auto;
+    width: 100vw;
+}
+
+/* header 與 navbar */
+
+header {
+    /* border: 2px solid green; */
+    position: fixed;
+    display: flex;
+    top: 0;
+    justify-content: flex-end;
+    height: 12vh;
+    width: 100vw;
+    background-color: var(--header);
+
+}
+
+#navbar {
+    /* border: 2px solid yellow; */
+    width: 100vw;
+    display: flex;
+
+}
+
+.nav-list {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+
+}
+
+.nav-link {
+    /* border: 2px solid purple; */
+    padding: 0 20px;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.nav-a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+/* welcome */
+
+#welcome-section {
+    /* border: 2px solid blue; */
+    background-color: var(--background);
+    height: 88vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vh;
+
+}
+
+#welcome-section h1 {
+    font-size: 55px;
+    padding: 0;
+    margin: 0;
+}
+
+#welcome-section p {
+    font-size: 2rem;
+    font-weight: lighter;
+    font-style: italic;
+    color: var(--header);
+    padding: 0;
+    margin: 0;
+}
+
+/* 作品部分 */
+
+#projects {
+    border: 2px solid rgb(143, 57, 196);
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(74, 101, 162);
+}
+
+
+
+#projects h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+
+}
+
+
+#Work {
+    /* border: 2px solid green; */
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 30px;
+    padding: 50px;
+}
+
+
+.project-tile {
+    /* border: 2px solid red; */
+    width: 25vw;
+    height: 28vw;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.project-img {
+    width: 100%;
+    height: 80%;
+
+}
+
+.project-title {
+    width: 100%;
+    height: 20%;
+    background-color: var(--background);
+    color: white;
+    font-size: 1.5vw;
+    font-weight: lighter;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-title:hover {
+    background-color: var(--header);
+    color: var(--background);
+}
+
+/* show button */
+
+
+#show {
+    /* border: 2px solid red; */
+    margin: auto;
+    margin-bottom: 60px;
+    width: 150px;
+    height: 60px;
+}
+
+#profile-link {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+    border-radius: 5px;
+}
+
+/* footer 與 contact */
+
+footer {
+    /* border: 2px solid green; */
+    background-color: var(--background);
+    color: white;
+    height: 88vh;
+}
+
+#contact {
+    /* border: 2px solid yellow; */
+    width: 80vw;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact h1 {
+    font-size: 55px;
+    padding: 0;
+    margin: 0;
+}
+
+#contact p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.contact-link {
+    /* border: 2px solid blue; */
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+.contact-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.contact-link a:nth-child(1):hover {
+    font-size: 25px;
+}
+
+hr {
+    border: none;
+
+    height: 4px;
+    background-color: var(--header);
+
+    margin: 0;
+}
+
+#footer {
+    /* border: 2px solid purple; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 17vh;
+
+}
+
+#footer-left,
+#footer-right {
+    /* border: 2px solid pink; */
+    text-align: center;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+#footer-left {
+    width: 67%;
+}
+
+#footer-right {
+    width: 33%;
+}
+
+
+/* 针对小于 768px 的屏幕 */
+@media (max-width: 768px) {
+    #header {
+        height: 8vh;
+        /* 缩小头部高度 */
+    }
+
+    #welcome-section h1 {
+        font-size: 40px;
+        /* 调整字体大小以提高可读性 */
+    }
+
+    #projects h1 {
+        font-size: 35px;
+        /* 调整项目标题大小 */
+    }
+
+    .project {
+        width: 45%;
+        /* 调整项目宽度 */
+    }
+
+    .nav-list {
+        flex-direction: column;
+        /* 堆叠导航栏链接 */
+    }
+}
