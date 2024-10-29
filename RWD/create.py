@@ -28,48 +28,86 @@ def create_combined_index_html():
                 font-family: Arial, sans-serif;
                 line-height: 1.6;
                 margin: 0;
+                padding: 0;
+                min-height: 100vh;
+                background: linear-gradient(135deg, 
+                    rgb(10,10,35) 0%,
+                    rgb(20,20,50) 50%,
+                    rgb(15,15,40) 100%);
+                color: #e0e0e0;
+            }
+            .wrapper {
+                max-width: 1200px;
+                margin: 0 auto;
                 padding: 20px;
-                display: flex;
-                flex-direction: column;
             }
             h1 {
-                color: #333;
+                color: #fff;
                 text-align: center;
-                border-style:double;
+                font-size: 2.5em;
+                margin-bottom: 1.5em;
+                text-shadow: 0 2px 4px rgba(0,0,0,0.3);
             }
             h2 {
-                margin-left: 20px;
+                color: #8be9fd;
+                border-bottom: 2px solid #8be9fd;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
             }
             .container {
                 display: flex;
                 justify-content: space-between;
+                gap: 40px;
+                background: rgba(15,15,45,0.5);
+                border-radius: 15px;
+                padding: 30px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             }
             .column {
                 width: 48%;
-                border: 1px solid #ccc;
+                background: rgba(20,20,55,0.5);
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.2);
             }
             ol {
                 padding-left: 20px;
+                margin: 0;
             }
             li {
-                margin-bottom: 10px;
-                list-style-type: none;
+                margin-bottom: 12px;
+                transition: transform 0.2s ease;
+            }
+            li:hover {
+                transform: translateX(5px);
             }
             a {
-                color: #0066cc;
+                color: #bd93f9;
                 text-decoration: none;
+                transition: color 0.3s ease;
             }
             a:hover {
-                text-decoration: underline;
+                color: #ff79c6;
+                text-decoration: none;
+            }
+            @media (max-width: 768px) {
+                .container {
+                    flex-direction: column;
+                }
+                .column {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
             }
         </style>
     </head>
     <body>
-        <h1>feeeCodeCamp RWD Series</h1>
-        <div class="container">
-            <div class="column">
-                <h2>HTML 文件</h2>
-                <ol>
+        <div class="wrapper">
+            <h1>子目錄文件索引</h1>
+            <div class="container">
+                <div class="column">
+                    <h2>HTML 文件</h2>
+                    <ol>
     """
 
     html_files = []
@@ -89,24 +127,25 @@ def create_combined_index_html():
 
     for file_path in html_files:
         html_content += (
-            f'                    <li><a href="{file_path}">{file_path}</a></li>\n'
+            f'                        <li><a href="{file_path}">{file_path}</a></li>\n'
         )
 
     html_content += """
-                </ol>
-            </div>
-            <div class="column">
-                <h2>CSS 文件</h2>
-                <ol>
+                    </ol>
+                </div>
+                <div class="column">
+                    <h2>CSS 文件</h2>
+                    <ol>
     """
 
     for file_path in css_files:
         html_content += (
-            f'                    <li><a href="{file_path}">{file_path}</a></li>\n'
+            f'                        <li><a href="{file_path}">{file_path}</a></li>\n'
         )
 
     html_content += """
-                </ol>
+                    </ol>
+                </div>
             </div>
         </div>
     </body>
@@ -116,9 +155,7 @@ def create_combined_index_html():
     with open("combined_index.html", "w", encoding="utf-8") as f:
         f.write(html_content)
 
-    print(
-        "combined_index.html 文件已成功創建，左右分欄列出了所有子目錄中的 HTML 和 CSS 文件。"
-    )
+    print("combined_index.html 文件已成功創建，使用深色漸層背景主題。")
 
 
 create_combined_index_html()
