@@ -1,0 +1,70 @@
+- Step 1-2: declare playlistSongs, playButton, pauseButton nextButton, previousButton & shuffleButton with values by using getElementById()
+- Step 3: create empty array allSongs[]
+- Step 4-6: add all songs into allSongs[]
+- Step 7: declare audio & assign value as new Audio() to create HTML5 audio element
+- Step 8: use let declare userData & assign value as empty object 
+- Step 9: Inside the userData object create a songs property & assign value as allSong
+- Step 10: Inside the userData object create currentSong, songCurrentTime properties & assign values as null & 0
+- Step 11-15: learning arrow function usage
+- Step 16: organize codes
+- Step 17: declare renderSongs using arrow function with array as parameter
+- Step 18: modify renderSongs with declare songsHTML using arrow function & assign value as array.map()
+- Step 19: modify songsHTML with using callback function & arrow function as parameter in array.map()
+- Step 20-23: modify songsHTML with adding returning interpolating elements to display song details in backticks
+- Step 24: modify songsHTML with chaining the join("") method to your map() method to concatenate all the elements of an array into a single string
+- Step 25: modify songsHTML with adding playlistSongs.innerHTML & assign value by songsHTML to update the playlist to display the songs
+- Step 26: call renderSongs using userData?.songs ( Optional chaining ) as parameter to prevent error occure
+- Step 27: declare sortSongs as arrow function to prepare sorting songs
+- Step 28: modify sortSongs with using .sort() method to userData?.songs
+- Step 29-32: modify .sort() method with compare callback function
+- Step 33: modify .sort() method with adding return userData?.songs
+- Step 34: modify Step 26 to change parameter of renderSongs()from userData?.songs to sortSongs()
+- Step 35: declare playSong as arrow function with id as parameter to play songs
+- Step 36: modify playSong with declare song as arrow function with value as userData?.songs.find(song => song.id === id) means to find first item in userData?.songs that fits condition 
+- Step 37: modify playSong with adding 2 properties & assign values for each one 
+- Step 38: modify playSong with adding if statement make sure userData?.currentSong is true or userData?.currentSong.id === song.id then set audio.currentTime to 0
+- Step 39: modify playSong with adding else statement to deal with currentTime at pause situation
+- Step 40: update the current song being played as well as the appearance of the playButton element by assign song to userData.currentSong
+- Step 41: use the classList property and the add() method to add the "playing" class to the playButton element & use the play() method of the audio variable (web audio API)
+- Step 42: add addEventListener("click",() =>{}) method for playButton to prepare click to start play function
+- Step 43: add if statement in arrow function in Step 42 to verify if userData?.currentSong is null to play the first song in the playlist
+- Step 44: add else statement after Step 43 to ensure current song will continou when button is clicked
+- Step 45: add onclick attribute to 1st button & add playsong(${song.id}) into onclick to play song anytime user click on it
+- Step 46: declare sortSongs as arrow function to prepare for pause songs
+- Step 47: assign userDate.songCurrentTime with audio.currentTime  
+- Step 48: remove .playing class from the playButton using classList and remove() method & use the pause() method of the audio variable
+- Step 49:  add addEventListener("click", pauseSong) for pauseButton to make pause button functional
+- Step 50: declare getCurrentSongIndex as arrow function to prepare for geting index of songs in userDate.song
+- Step 51: modify getCurrentSongIndex by adding return of userData?.songs.indexOf(userData?.currentSong) to get the index of current song 
+- Step 52:　declare playNextSong as arrow function to prepare for play next song
+- Step 53:　add if statement in Step 52 to check if there's no current song playing in the userData object & play the first song in array if true
+- Step 54: add else statement after Step 53 to play current song by declare currentSongIndex & assign value as getCurrentSongIndex()
+- Step 55: declare nextSong & assign userData?.songs[currentSongIndex + 1] to it & call playSong(nextSong.id)
+- Step 56: add addEventListener("click", playNextSong) for nextButton  to make play next button functional
+- Step 57: declare playPreviousSong as arrow function to prepare for play previous song
+- Step 58: add if statement in Step 57 to check if there's no current song playing in the userData object & exit  usint return  if true & add else statement declare currentSongIndex with getCurrentSongIndex() as value
+- Step 59:　declare previousSong & assign userData?.songs[currentSongIndex － 1] to it & call playSong(previousSong.id)
+- Step 60: add addEventListener("click", playPreviousSong) for nextButton  to make play next button functional
+- Step 61: declare highlightCurrentSong as arrow function to prepare for highlight inthr playlist & declare playlistSongElements by using document.querySelectorAll(".playlist-song") as value
+- Step 62: declare songToHighlight with value document.getElementById(`song-${userData?.currentSong?.id}`)
+- Step 63: Use the forEach method on playlistSongElements. Pass in songEl as the parameter and use arrow syntax to add in an empty callback
+- Step 64: Within the callback function, use the removeAttribute() method to remove the "aria-current" attribute
+- Step 65: add if statement with songToHighlight as parameter & se setAttribute on songToHighlight to pass in "aria-current" and "true" as the first and second arguments.
+- Step 66: in playSong() add to call highlightCurrentSong()
+- Step 67: declare songToHighlight setPlayerDisplay as arrow function to prepare for sidplaying current song info 
+- Step 68: modify songToHighlight by declaring playingSong & songArtist with value obtain by getElementById() with parameter #player-song-title & #player-song-artist
+- Step 69: modify songToHighlight by declaring currentTitle & currentArtist with value access userData?.currentSong?.title and userData?.currentSong?.artist
+- Step 70: use ternary operator (三元運算符) to give playingSong.textContent & songArtist.textContent right value
+- Step 71: modify playSong() by adding setPlayerDisplay()
+- Step 72: declare setPlayButtonAccessibleText as arrow function to make play button describes the current song or the first song in the playlist 
+- Step 73: declare song & assign value using OR operator with userData?.currentSong or userData?.songs[0]
+- Step 74: use playButton.setAttribute to set aria-label with two different values Play ${song.title} or "Play" by checking song?.title is available or not
+- Step 75: modify playSong() by adding setPlayButtonAccessibleText()
+- Step 76: declare shuffle as arrow function to prepare for shuffle songs
+- Step 77: use userData?.songs.sort(() => Math.random() - 0.5) to get random songlist
+- Step 78: set the currentSong to nothing and the songCurrentTime to 0
+- Step 79: re-render the songs, pause the currently playing song, set the player display, and set the play button accessible text again
+- Step 80: add addEventListener("click", shuffle) for shuffleButton to make shuffle button functional
+- Step 81: declare deleteSong as arrow function to prepare for delete function in playlist
+- Step 82: 
+
