@@ -13,12 +13,12 @@
 - Step 20-23: modify songsHTML with adding returning interpolating elements to display song details in backticks
 - Step 24: modify songsHTML with chaining the join("") method to your map() method to concatenate all the elements of an array into a single string
 - Step 25: modify songsHTML with adding playlistSongs.innerHTML & assign value by songsHTML to update the playlist to display the songs
-- Step 26: call renderSongs using userData?.songs ( Optional chaining ) as parameter to prevent error occure
+- Step 26: call renderSongs using userData?.songs ( Optional chaining ) as argument to prevent error occure
 - Step 27: declare sortSongs as arrow function to prepare sorting songs
 - Step 28: modify sortSongs with using .sort() method to userData?.songs
 - Step 29-32: modify .sort() method with compare callback function
 - Step 33: modify .sort() method with adding return userData?.songs
-- Step 34: modify Step 26 to change parameter of renderSongs()from userData?.songs to sortSongs()
+- Step 34: modify Step 26 to change argument of renderSongs() from userData?.songs to sortSongs()
 - Step 35: declare playSong as arrow function with id as parameter to play songs
 - Step 36: modify playSong with declare song as arrow function with value as userData?.songs.find(song => song.id === id) means to find first item in userData?.songs that fits condition 
 - Step 37: modify playSong with adding 2 properties & assign values for each one 
@@ -49,10 +49,10 @@
 - Step 62: declare songToHighlight with value document.getElementById(`song-${userData?.currentSong?.id}`)
 - Step 63: Use the forEach method on playlistSongElements. Pass in songEl as the parameter and use arrow syntax to add in an empty callback
 - Step 64: Within the callback function, use the removeAttribute() method to remove the "aria-current" attribute
-- Step 65: add if statement with songToHighlight as parameter & se setAttribute on songToHighlight to pass in "aria-current" and "true" as the first and second arguments.
+- Step 65: add if statement with songToHighlight as condition & set setAttribute on songToHighlight to pass in "aria-current" and "true" as the first and second arguments.
 - Step 66: in playSong() add to call highlightCurrentSong()
 - Step 67: declare songToHighlight setPlayerDisplay as arrow function to prepare for sidplaying current song info 
-- Step 68: modify songToHighlight by declaring playingSong & songArtist with value obtain by getElementById() with parameter #player-song-title & #player-song-artist
+- Step 68: modify songToHighlight by declaring playingSong & songArtist with value obtain by getElementById() method with element #player-song-title & #player-song-artist
 - Step 69: modify songToHighlight by declaring currentTitle & currentArtist with value access userData?.currentSong?.title and userData?.currentSong?.artist
 - Step 70: use ternary operator (三元運算符) to give playingSong.textContent & songArtist.textContent right value
 - Step 71: modify playSong() by adding setPlayerDisplay()
@@ -66,5 +66,21 @@
 - Step 79: re-render the songs, pause the currently playing song, set the player display, and set the play button accessible text again
 - Step 80: add addEventListener("click", shuffle) for shuffleButton to make shuffle button functional
 - Step 81: declare deleteSong as arrow function to prepare for delete function in playlist
-- Step 82: 
-
+- Step 82: assign userData.songs using filter() method of userData?.songs & id song as parameter of the arrow function callback &　use implicit return to check if song.id is strictly not equal to id
+- Step 83: call renderSongs()  pass in the userData?.songs array as an argument & call highlightCurrentSong() to highlight the current song if there is any & call setPlayButtonAccessibleText() 
+- Step 84: add if statement to check if deleting song is current playing song
+- Step 85: if true in Step 84 set userData.currentSong to null & userData.songCurrentTime to 0 then call pauseSong() & setPlayerDisplay() to pause song & update display of player
+- Step 86: Within the button element in the renderSongs() add onclick attribute & use deleteSong(song.id) as value
+- Step 87: add if statement to check if playlist is empty
+- Step 88: declare resetButton & use createElement() to create a "button"
+- Step 89: use createTextNode() method to create "Reset Playlist" as text & assign it to resetText constant
+- Step 90: assign resetButton with id="reset" & aria-label attributes to "Reset playlist"
+- Step 91: Use appendChild() to attach resetText to resetButton element, and resetButton to the playlistSongs element
+- Step 92: add addEventListener("click", ) for resetButton & pass a callback using arrow syntax to prepare for  reset the playlist to its original state
+- Step 93: spread allSongs into an array and assign it to userData.songs using [...'arrayname'] (展開運算子)
+- Step 94: call renderSongs() using sortSongs() as argument & call setPlayButtonAccessibleText() to update play button's accessible text & call remove() method of resetButton
+- Step 95: add addEventListener("ended", ) for audio & pass a callback using arrow syntax to prepare for auto play song when current song ends
+- Step 96: in Step 95 call back　declare currentSongIndex with getCurrentSongIndex() assigned & declare nextSongExists with assigned true || false using ternary operator by comparing (userData.songs.length-1) > currentSongIndex
+- Step 97 : add if statement to check if nextSongExists exists then call playNextSong() function
+- Step 98 : add else statement to set userData.currentSong to null & userData.songCurrentTime to 0
+- Step 99: call pauseSong() , setPlayerDisplay(), highlightCurrentSong() & setPlayButtonAccessibleText() to set player correctly
