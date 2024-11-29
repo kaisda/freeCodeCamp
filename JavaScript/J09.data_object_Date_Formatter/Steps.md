@@ -1,0 +1,23 @@
+- Step 1: declare currentDateParagraph with value by using .getElementById("current-date") method
+- Step 2: declare dateOptionsSelectElement with value by using .getElementById("date-options") method
+- Step 3: declare date with value by using new Date() (built-in constructors, starts with a capital letter & initialized with the 'new' operator)
+- Step 4: declare day with value by using .getDate() methods (no index issue)
+- Step 5: declare month with value by using .getMonth() methods (remember to add 1 because of index issue)
+- Step 6: declare year with value by using .getFullYear() methods (no index issue)
+- Step 7: declare hours with value by using .getHours() methods (no index issue)
+- Step 8: declare minutes with value by using .getMinutes() methods (no index issue)
+- Step 9: declare formattedDate with value by using `` (template literals 範本字串)
+- Step 10-12: add embedded expression (崁入式表達式) contain day, month, year variables
+- Step 13: test formattedDate using console.log(formattedDate)
+- Step 14: set currentDateParagraph value using .textContent(formattdDate) & comment Step 13
+- Step 15: attach addEventListener method to dateOptionsSelectElement with first argument as change & second argument as empty arrow function (箭頭函數)
+- Step 16: add switch statement using dateOptionsSelectElement.value as expression in Step 15 arrow function
+- Step 17: add case (分支或案例) in switch for "yyyy-mm-dd" & set text content of currentDateParagraph to the value of formattedDate inside case 
+- Step 18-19: practice with split() to divide a string into substrings based on a specified separator
+- Step 20: practice with reverse() to reverse an array of elements
+- Step 21: practice with join() to takes an array of elements and joins them into a string
+- Step 22: comment from Step 18 to Step 22
+- Step 23: chain split("-").reverse().join("-") to formattedDate inside case in Step 17
+- Step 24: add break at the end of case to stop executing statements
+- Step 25-26: add another case in switch for "mm-dd-yyyy-h-mm" set text content of currentDateParagraph to `${month}-${day}-${year} ${hours} Hours ${minutes} Minutes` using template literals with variables $ add break at the end
+- Step 27: add default case in switch for "dd-mm yyyy" set text content of currentDateParagraph to formattedDate $ add break at the end
