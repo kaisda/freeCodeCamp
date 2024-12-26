@@ -56,4 +56,11 @@
 - Step 58: use localStorage.removeItem() method to remove myTaskArr[] from localStorage & observe in the console localStore find out there are no data inside object
 - Step 59: use localStorage.clear() method to replace localStorage.removeItem() to remove all data from localStorage & observe in the console localStore find out there are no data inside object
 - Step 60: clear all related codes to myTaskArr[] & localStorage because the demo ends
-- Step 61: 
+- Step 61: inside addOrUpdateTask() use localStorage.setItem("data", JSON.stringify(taskData)) to save taskData[] to localStorage
+- Step 62: inside deleteTask() use localStorage.setItem("data", JSON.stringify(taskData)) to save taskData[] to localStorage bcause we use splice() method to remove & delete task from taskData[] instead of removeItem() & clear() method
+- Step 63: change taskData[] to retrieve taskData[] from localStorage or empty array for ui reflection  
+- Step 64: if taskData[] is not empty then show existing tasks using taskData.length as condition  because 0 is a falsy value
+- Step 65: fix bug by inside reset() assign "Add Task" string addOrUpdateTaskBtn.innerText to change the button text to "Add Task" when user click the reset button or it will show wrong button text "Update Task"
+- Step 66: fix bug by inside & at begining of addOrUpdateTask() add if statement with condition !titleInput.value.trim() to check if titleInput field is empty or not & if it is empty send alert message to user & return
+- Step 67: create fully function named removeSpecialChars() to remove special characters from user input to prevent application crash
+- Step 68: fix bug by calling removeSpecialChars() on id, title & description properties in taskObj to prevent application crash
