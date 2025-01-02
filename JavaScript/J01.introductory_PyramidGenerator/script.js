@@ -28,55 +28,69 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // lesson 05 console.log
 // let character = 'Hello';
 // console.log(character);
+/* Hello */
 
 
 // lesson 06 reassigning variables
 // let character = 'Hello';
 // character = 'World';
 // console.log(character);
+/* World */
 
 
 // lesson 07 log variables twice
 // let character = 'Hello';
 // console.log(character);
+/* Hello */
 // character = 'World';
 // console.log(character);
+/* World */
 
 
 // lesson 08 camel case naming convention
 // let character = 'Hello';
 // console.log(character);
+/* Hello */
 // character = "World";
 // console.log(character);
+/* World */
 // let secondCharacter;
 
 
 // lesson 09 uninitialized variables (undefined)
 // let character = 'Hello';
 // console.log(character);
+/* Hello */
 // character = "World";
 // console.log(character);
+/* World */
 // let secondCharacter;
 // console.log(secondCharacter);
+/* undefined */
 
 
 // lesson 10 assign to uninitialized variables
 // let character = 'Hello';
 // console.log(character);
+/* Hello */
 // character = "World";
 // console.log(character);
+/* World */
 // let secondCharacter;
 // secondCharacter = "Test";
 // console.log(secondCharacter);
+/* Test */
 
 
 // lesson 11 assign the value of a variable to another variable
 // let character = 'Hello';
 // console.log(character);
+/* Hello */
 // character = "World";
 // let secondCharacter;
 // secondCharacter = character;
 // console.log(secondCharacter);
+/* World */
 
 
 // lesson 12 organize codes
@@ -88,7 +102,9 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // let profession = "teacher";
 // let age;
 // console.log(profession);
+/* teacher */
 // console.log(age);
+/* undefined */
 
 
 // lesson 14 organize codes
@@ -104,6 +120,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // let character = 'Hello';
 // let count = 8;
 // console.log(count + 1);
+/* 9 */
 
 
 // lesson 17 organize codes
@@ -128,6 +145,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // let count = 8;
 // let rows = ["Naomi", "Quincy", "CamperChan"];
 // console.log(rows[0]);
+/* Naomi */
 
 
 // lesson 21 array is mutable
@@ -135,8 +153,10 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // let count = 8;
 // let rows = ["Naomi", "Quincy", "CamperChan"];
 // console.log(rows[0]);
+/* Naomi */
 // rows[2] = 10;
 // console.log(rows);
+/* ["Naomi", "Quincy", 10] */
 
 
 // lseeon 22 array length and last one
@@ -144,8 +164,10 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // let count = 8;
 // let rows = ["Naomi", "Quincy", "CamperChan"];
 // console.log(rows[0]);
+/* Naomi */
 // rows[2] = 10;
 // console.log(rows[rows.length - 1]);
+/* 10 */
 
 
 // lesson 23 organize codes
@@ -153,6 +175,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // let count = 8;
 // let rows = ["Naomi", "Quincy", "CamperChan"];
 // console.log(rows);
+/* ["Naomi", "Quincy", "CamperChan"] */
 
 
 //lesson 24 review array declaration
@@ -161,9 +184,12 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // let rows = ["Naomi", "Quincy", "CamperChan"];
 // let cities = ["London", "New York", "Mumbai"];
 // console.log(cities);
+/* ["London", "New York", "Mumbai"] */
 // cities[cities.length - 1] = "Mexico City";
 // console.log(cities);
+/* ["London", "New York", "Mexico City"] */
 // console.log(rows);
+/* ["Naomi", "Quincy", "CamperChan"] */
 
 
 // lesson 25 organize codes
@@ -171,6 +197,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // let count = 8;
 // let rows = ["Naomi", "Quincy", "CamperChan"];
 // console.log(rows);
+/* ["Naomi", "Quincy", "CamperChan"] */
 
 
 // lesson 26 array method .push()
@@ -179,6 +206,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // let rows = ["Naomi", "Quincy", "CamperChan"];
 // rows.push("freeCodeCamp");
 // console.log(rows);
+/* ["Naomi", "Quincy", "CamperChan", "freeCodeCamp"] */
 
 
 // lesson 27 array method .pop() and it's return value (value removed)
@@ -186,8 +214,10 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // let count = 8;
 // let rows = ["Naomi", "Quincy", "CamperChan"];
 // rows.push("freeCodeCamp");
+/* ["Naomi", "Quincy", "CamperChan", "freeCodeCamp"] */
 // let popped = rows.pop();
 // console.log(popped);
+/* "freeCodeCamp" */
 // console.log(rows);
 
 
@@ -197,9 +227,12 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // let rows = ["Naomi", "Quincy", "CamperChan"];
 // let pushed = rows.push("freeCodeCamp");
 // console.log(pushed)
+/* 4 */
 // let popped = rows.pop();
 // console.log(popped);
+/* "freeCodeCamp" */
 // console.log(rows);
+/* ["Naomi", "Quincy", "CamperChan"] */
 
 
 // sesson 29 organize codes
@@ -262,6 +295,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // for (let i = 0; i < count; i = i + 1) {
 //     console.log(i);
 // }
+/* 0, 1, 2, 3, 4, 5, 6, 7 */
 
 
 // lesson 38 logic (array.push())
@@ -271,6 +305,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // for (let i = 0; i < count; i = i + 1) {
 //     rows.push(i);
 // }
+/* (8)[0, 1, 2, 3, 4, 5, 6, 7] */
 
 
 // lesson 39 prepare to see what loop is doing now
@@ -318,6 +353,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 //     result = result + row
 // }
 // console.log(result)
+/* 01234567 */
 
 
 // lesson 43 for of loop and logic (add special character (newline))
@@ -332,6 +368,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 //     result = result + "\n" + row
 // }
 // console.log(result)
+/* 0 1 2 3 4 5 6 7 垂直排列(有換行符號的關係) */
 
 
 // lesson 44 change iterator from i to character
@@ -346,6 +383,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 //     result = result + "\n" + row;
 // }
 // console.log(result);
+/* # # # # # # # # 垂直排列 */
 
 
 // lesson 45 strings methods (.repeat())
@@ -355,11 +393,23 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // for (let i = 0; i < count; i = i + 1) {
 //     rows.push(character.repeat(i));
 // }
+/* # # # # # # # # 垂直排列 */
 // let result = ""
 // for (const row of rows) {
 //     result = result + "\n" + row;
 // }
 // console.log(result);
+/*
+
+#
+##
+###
+####
+#####
+######
+#######
+(0-7)
+*/
 
 
 // lesson 46 index off-by-one error
@@ -374,6 +424,17 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 //     result = result + "\n" + row;
 // }
 // console.log(result);
+/*
+#
+##
+###
+####
+#####
+######
+#######
+########
+(1-8)
+*/
 
 
 // lesson 47 function declaration
@@ -397,6 +458,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // const rows = [];
 // function padRow() { }
 // padRow();
+/* undefined */
 // for (let i = 0; i < count; i = i + 1) {
 //     rows.push(character.repeat(i + 1))
 // }
@@ -414,6 +476,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // function padRow() {
 // }
 // const call =padRow();
+/* undefined */
 // for (let i = 0; i < count; i = i + 1) {
 //   rows.push(character.repeat(i + 1))
 // }
@@ -431,8 +494,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // function padRow() { }
 // const call = padRow();
 // console.log(call);
-
-
+/* undefined */
 // for (let i = 0; i < count; i = i + 1) {
 //     rows.push(character.repeat(i + 1))
 // }
@@ -452,6 +514,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // }
 // const call = padRow();
 // console.log(call);
+/* Hello! */
 // for (let i = 0; i < count; i = i + 1) {
 //     rows.push(character.repeat(i + 1))
 // }
@@ -471,6 +534,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // }
 // const call = padRow();
 // console.log(call);
+/* Hello! */
 // for (let i = 0; i < count; i = i + 1) {
 //     rows.push(character.repeat(i + 1))
 // }
@@ -490,6 +554,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // }
 // const call = padRow();
 // console.log(call);
+/* undefined */
 // for (let i = 0; i < count; i = i + 1) {
 //     rows.push(character.repeat(i + 1))
 // }
@@ -509,6 +574,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // }
 // const call = padRow("kaisda");
 // console.log(call);
+/* kaisda */
 // for (let i = 0; i < count; i = i + 1) {
 //     rows.push(character.repeat(i + 1))
 // }
@@ -531,6 +597,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // }
 // const sum = addTwoNumbers(5, 10);
 // console.log(sum);
+/* 15 */
 // const call = padRow("Kaisda");
 // console.log(call);
 // for (let i = 0; i < count; i = i + 1) {
@@ -571,6 +638,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // }
 // const call = padRow("CamperChan");
 // console.log(call);
+/* #CamperChan */
 // for (let i = 0; i < count; i = i + 1) {
 //     rows.push(character.repeat(i + 1))
 // }
@@ -592,6 +660,10 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // }
 // const call = padRow("CamperChan");
 // console.log(call);
+/* 
+Testing
+#CamperChan 
+*/
 // for (let i = 0; i < count; i = i + 1) {
 //     rows.push(character.repeat(i + 1))
 // }
@@ -612,6 +684,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // }
 // const call = padRow("CamperChan");
 // console.log(call);
+/* Testing */
 // for (let i = 0; i < count; i = i + 1) {
 //     rows.push(character.repeat(i + 1))
 // }
@@ -634,6 +707,10 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // }
 // const call = padRow("CamperChan");
 // console.log(call);
+/*
+This works!
+Testing
+*/
 // for (let i = 0; i < count; i = i + 1) {
 //     rows.push(character.repeat(i + 1))
 // }
@@ -762,6 +839,16 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 //     result = result + "\n" + row;
 // }
 // console.log(result);
+/*
+#
+##
+###
+####
+#####
+######
+#######
+########
+*/
 
 
 // lesson 68 add " " in the beginning and the end of character
@@ -779,6 +866,17 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 //     result = result + "\n" + row;
 // }
 // console.log(result);
+/*
+ 
+ #
+ ##
+ ###
+ ####
+ #####
+ ######
+ #######
+ ########
+*/
 
 
 // lesson 69 change " " to " ".repeat(rowCount - rowNumber)
@@ -849,7 +947,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // console.log(result);
 
 
-// lesson 73 change i in for loop start from 1 but the result diagam us missing the first row
+// lesson 73 change i in for loop start from 1 but the result diagam is missing the first row
 // const character = "#";
 // const count = 8;
 // const rows = [];
@@ -895,7 +993,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // }
 // let result = ""
 // for (const row of rows) {
-//     result = result + "\n" + row;
+//     result = result + row + "\n" ;
 // }
 // console.log(result);
 
@@ -1118,37 +1216,6 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // console.log(result);
 
 
-// lesson 84 comment if statement and declare two variables
-// const character = "#";
-// const count = 8;
-// const rows = [];
-// function padRow(rowNumber, rowCount) {
-//     return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
-// }
-// // TODO: use a different type of loop
-/*
-// for (let i = 1; i <= count; i++) {
-//     rows.push(padRow(i, count))
-// }
-*/
-/*
-// if ("") {
-//     console.log("Condition is true");  // condition is falsy value so this line is not shown and not executed
-// } else if (5 > 10){
-//     console.log("5 is less than 10");
-// } else {
-//      console.log("This is the else block");
-// }
-*/
-// let continueLoop = false;
-// let done = 0;
-// let result = ""
-// for (const row of rows) {
-//     result = result + "\n" + row;
-// }
-// console.log(result);
-
-
 // lesson 85 while loop
 // const character = "#";
 // const count = 8;
@@ -1323,7 +1390,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // console.log(result);
 
 
-// lesson 90  add while loop with loop row.push() and use calling padRow() function with done aand count as parameters
+// lesson 90  add while loop with loop row.push() and use calling padRow() function with done and count as parameters
 // const character = "#";
 // const count = 8;
 // const rows = [];
@@ -1361,7 +1428,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // console.log(result);
 
 
-// lesson 91  change while condition with strict inequality operator
+// lesson 91  change while condition with strict equality operator
 // const character = "#";
 // const count = 8;
 // const rows = [];
@@ -1626,12 +1693,12 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 //      console.log("This is the else block");
 // }
 */
-/*
+
 // while (rows.length < count) {
 //     rows.length;
 //     rows.push(padRow(rows.length + 1, count))
 // }
-*/
+
 // let result = ""
 // for (const row of rows) {
 //     result = result + "\n" + row;
@@ -1705,7 +1772,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 //     rows.push(padRow(rows.length + 1, count))
 // }
 */
-// for (let i = count,i > 0,false) {
+// for (let i = count;i > 0;false) {
 //
 // }
 // let result = ""
@@ -2084,43 +2151,30 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 // const character = "#";
 // const count = 8;
 // const rows = [];
+
 // function padRow(rowNumber, rowCount) {
 //     return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
 // }
+
 // // TODO: use a different type of loop
 // for (let i = 1; i <= count; i++) {
-//     rows.push(padRow(i, count))
+//     rows.push(padRow(i, count));
 // }
-/*
-// if ("") {
-//     console.log("Condition is true");  // condition is falsy value so this line is not shown and not executed
-// } else if (5 > 10){
-//     console.log("5 is less than 10");
-// } else {
-//      console.log("This is the else block");
-// }
-*/
-/*
-// while (rows.length < count) {
-//     rows.length;
-//     rows.push(padRow(rows.length + 1, count))
-// }
-*/
-/*
-// for (let i = count,i > 0, i--) {
-//      rows.push(padRow(i, count))
-// }
-*/
-// const numbers = [1, 2, 3]
-// const shifted = numbers.shift();
-// console.log(shifted);
-// const unshifted = numbers.unshift(5);
-// console.log(unshifted)
-// console.log(numbers)
+
+// /*while (rows.length < count) {
+//   rows.push(padRow(rows.length + 1, count));
+// }*/
+
+// /*for (let i = count; i > 0; i--) {
+//   rows.push(padRow(i, count));
+// }*/
+
 // let result = ""
+
 // for (const row of rows) {
-//     result = result + "\n" + row;
+//     result = result + row + "\n";
 // }
+
 // console.log(result);
 
 
@@ -2433,6 +2487,7 @@ Within the file, add <script src="./J01.js"></script> in the <head> section.
 
 
 
+
 // lesson experiment more with different values
 const character = "!";
 const count = 10;
@@ -2461,3 +2516,6 @@ for (const row of rows) {
 }
 
 console.log(result);
+
+
+
